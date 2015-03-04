@@ -11,8 +11,8 @@
 
 //Main Color Variables
 $main-color: #04b5cc;
-$dark-color: #ed6a18; //Link Color
-$light-color: #0069b4; //Selected Header BG Color, ie. calendar        ***Custom, not from palette***
+$dark-color: #0069b4; //Link Color
+$light-color: #a9d3a7; //Selected Header BG Color, ie. calendar        ***Custom, not from palette***
 $bg-color: #a9d3a7; //Selected Content BG Color, ie. calendar          ***Custom, not from palette***
 
 //Main BG Color Variables
@@ -21,7 +21,8 @@ $main-bg-60: lighten($main-bg, 18.5%); //Main Border/HR Color
 $main-bg-25: lighten($main-bg, 25%); 
 
 //Secondary Color Variables
-$secondary: #0069b4;
+$secondary: #f4943c;
+$secondary-dark: #ed6a18;
 $secondary-50: lighten($secondary, 9%);
 $secondary-25: lighten($secondary, 20%); //Important Heading BG Color 
 
@@ -82,7 +83,7 @@ $base-font-color: $black;
 $lighter-base-font-color: $black-80;
 $very-light-text: $gray-1;
 
-$link-color: $dark-color;
+$link-color: $main-color;
 $link-color-d1: $dark-color;
 $link-hover: $light-color;
 $site-status-color: $bg-color;
@@ -186,7 +187,7 @@ $footer_margin: ($baseline/4) 0;
 //-----------------
 //  CSS BG Images
 //-----------------
-$homepage-bg-image: url('../themes/claseabierta/images/class.jpg');
+$homepage-bg-image: url('../themes/claseabierta/images/fondo.jpg');
 
 $login-banner-image: none;
 $register-banner-image: none;
@@ -207,3 +208,46 @@ $video-thumb-url: '../themes/claseabierta/images/edx.png';
     margin: 0 !important;
     text-align: right;
 }
+
+
+//-----------------
+//  New Styles
+//-----------------
+
+.wrapper-footer {
+    background-color: $white;
+    footer{
+        .nav-colophon{
+            li{
+                a{
+                    font-size: 0.9em;
+                    color: $black-80;
+                }
+            }
+        }
+    }
+}
+
+header.global {
+    .nav-courseware{
+        li.nav-courseware-01{
+            a.cta-registro{
+                background-color: $secondary;
+                margin-right: 10px;
+            }
+            a.cta-registro:hover{
+                background-color: $dark-color;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+

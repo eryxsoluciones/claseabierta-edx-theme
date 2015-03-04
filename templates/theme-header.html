@@ -1,10 +1,25 @@
 ## mako
 <%! from django.core.urlresolvers import reverse %>
 <%namespace name='static' file='/static_content.html'/>
-<%inherit file="/navigation.html"/>
+<%! from datetime import datetime %>
+<%! from pytz import UTC %>
 
-## TODO: this will eventually be moved to the Sass
-<%block name="navigation_logo">
-  <img src="${static.url('themes/claseabierta/images/logo.png')}" alt="Home Page" />
-</%block>
+
+    <header class="global" aria-label="Global Navigation">
+        <nav>
+            <h1 class="logo">
+                <a href="/">
+                    <img src="/static/themes/claseabierta/images/logo.png" alt="Home Page">
+                </a>
+            </h1>
+            <ol class="right nav-courseware">
+                <li class="nav-courseware-01">
+                    <a class="cta cta-registro" href="/register">Registrarse</a>
+                </li>
+                <li class="nav-courseware-01">
+                    <a class="cta cta-login" href="/login">Iniciar sesión</a>
+                </li>
+            </ol>
+        </nav>
+    </header>
 
